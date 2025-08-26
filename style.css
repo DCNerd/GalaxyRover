@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: radial-gradient(circle at top, #000000, #1a0033);
+    overflow: hidden;
+    color: #e0d6ff;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #2a0055;
+    box-shadow: 0 0 20px #8000ff;
+  }
+  
+  .logo {
+    height: 60px;
+    margin-right: 15px;
+  }
+  
+  h1 {
+    font-size: 2em;
+    color: #caaeff;
+  }
+  
+  .generator {
+    text-align: center;
+    margin-top: 80px;
+  }
+  
+  .generator button {
+    background-color: #8000ff;
+    color: white;
+    font-size: 1.5em;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .generator input {
+    font-size: 2em;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    margin: 10px;
+    border: 2px solid #8000ff;
+    border-radius: 10px;
+    background-color: #1a0033;
+    color: #e0d6ff;
+  }
+  
+  .history-tab {
+    position: fixed;
+    right: 0;
+    top: 100px;
+    width: 250px;
+    background-color: #2a0055;
+    padding: 20px;
+    border-left: 2px solid #8000ff;
+    height: calc(100% - 100px);
+    overflow-y: auto;
+  }
+  
+  .history-tab h2 {
+    color: #caaeff;
+  }
+  
+  #historyList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #historyList li {
+    background-color: #1a0033;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #8000ff;
+  }
+  
+  /* Twinkling stars */
+  .stars {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: transparent;
+  }
+  
+  .star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    animation: twinkle 2s infinite;
+  }
+  
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 0.2; }
+  }
+  
